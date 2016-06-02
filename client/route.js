@@ -15,3 +15,5 @@ Router.route('planetas', function(){
 Router.route('planetas/novo', function(){
   this.render('adiciona');
 });
+
+Router.route('sobre');
