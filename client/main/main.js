@@ -4,8 +4,17 @@ $(document).load(function(){
 
 $(document).ready(function(){
   configuraHead();
+  configuraBody();
   configuraElementos();
 });
+
+var configuraBody = function() {
+  var script = $("<script>", {
+    src : "/js/materialize.min.js"
+  });
+
+  $("body").append(script);
+};
 
 var configuraHead = function() {
   var meta = $("<meta>", {
