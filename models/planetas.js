@@ -1,1 +1,1 @@
-// Planetas = new Mongo.Collection("planetas");
+Planetas = new Mongo.Collection("planetas");

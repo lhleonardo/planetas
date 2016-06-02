@@ -1,27 +1,89 @@
 <template name="adiciona">
   <h2 class="center">Adicionar planeta</h2>
   <div class="row">
-      <form class="col s12">
-          <div class="row">
-              <div class="input-field col s6">
-                  <input id="nomeCatalogo" name="nomeCatalogo" type="text" class="validate">
-                  <label for="nomeCatalogo">Nome de catálogo</label>
-              </div>
-              <div class="input-field col s6">
-                  <input id="apelido" type="text" class="validate">
-                  <label for="apelido">Apelido</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="nomeCatalogo" name="nomeCatalogo" type="text" class="validate">
+          <label for="nomeCatalogo">Nome de catálogo</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="apelido" type="text" class="validate">
+          <label for="apelido">Apelido</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="dataDescoberta" class="datepicker" placeholder="Data" type="date" value="" name="dataDescoberta">
+          <label for="dataDescoberta">Data de descoberta</label>
+        </div>
+      </div>
 
-                <input id="dataDescoberta" class="datepicker" placeholder="Data" type="date" value="" name="dataDescoberta">
-                <label for="dataDescoberta">Data de descoberta</label>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" name="tipoPlaneta" id="tipoPlaneta" class="validate">
+          <label for="tipoPlaneta">Tipo de Planeta (combo: Rochoso, Gasoso)</label>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="text" id="constituicao" class="validate" name="constituicao">
+          <label for="constituicao">Constituição (geral)</label>
+        </div>
 
+        <div class="input-field col s6">
+          <input type="text" id="constituicaoAtmosferica" class="validate" name="constituicaoAtmosferica">
+          <label for="constituicaoAtmosferica">Constituição Atmosférica</label>
+        </div>
+      </div>
 
-              </div>
-          </div>
-      </form>
+      <div class="row">
+        <div class="input-field col 12">
+          <input type="text" class="validate" id="localizacao" name="localizacao">
+          <label for="localizacao">Localização</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="text" class="validate" id="diametro" name="diametro">
+          <label for="diametro">Diâmetro</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input type="text" id="area" class="validate" name="area">
+          <label for="area">Área Total</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" id="distancia-sol" class="validate" name="distancia-sol">
+          <label for="distancia-sol">Distância do Sol</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="textarea" id="fauna" class="validate" name="fauna">
+          <label for="fauna">Fauna</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input type="textarea" class="validate" id="flora" name="flora">
+          <label for="flora">Flora</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="textarea" class="validate" id="descricao" name="descricao">
+          <label for="descricao">Descrição</label>
+        </div>
+      </div>
+
+      <input type="submit">
+    </form>
   </div>
 </template>
