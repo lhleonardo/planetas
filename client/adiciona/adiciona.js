@@ -21,7 +21,7 @@ Template.adiciona.events({
 
     Planetas.insert(planeta);
 
-    alert('salvo com sucesso')
+    Router.go('/');
 
   }
 });
