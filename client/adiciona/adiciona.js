@@ -23,5 +23,8 @@ Template.adiciona.events({
 
     Router.go('/');
 
+  },
+  rendered: function(){
+    $("select").material_select();
   }
 });

@@ -1,3 +1,5 @@
-$(document).ready(function (){
-  // fazer o menu do mobile funcionar...
+Template.header.helpers({
+  rendered: function(){
+    $(".button-collapse").sideNav();
+  }
 });
