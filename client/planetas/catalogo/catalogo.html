@@ -1,0 +1,17 @@
+<template name="catalogo">
+
+    <h2 class="center-align">Catálogo</h2>
+
+    <p class="center-align flow-text">Os planetas aparecerão aqui.</p>
+
+    <div class="center-align">
+        {{#each planetas}}
+
+        <p>{{nomeCatalogo}} (
+            <a href="{{pathFor 'edita' _id}}">Editar</a> - <a href="{{pathFor 'planeta' _id}}">Detalhes</a>)
+        </p>
+
+        <img src="{{url}}" alt="{{apelido}}" width="300px" height="150px"> {{/each}}
+    </div>
+
+</template>

@@ -1,0 +1,8 @@
+.card {
+    margin: 0px .3em;
+    padding: .6em;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

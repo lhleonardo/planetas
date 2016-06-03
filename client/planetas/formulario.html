@@ -1,0 +1,100 @@
+<template name="formulario">
+    <div class="row">
+        <div class="input-field col s6">
+            <input id="nomeCatalogo" name="nomeCatalogo" type="text" class="validate" value="{{nomeCatalogo}}" required>
+            <label for="nomeCatalogo">Nome de catálogo</label>
+        </div>
+        <div class="input-field col s6">
+            <input id="apelido" type="text" class="validate" required value="{{apelido}}">
+            <label for="apelido">Apelido</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <input id="dataDescoberta" class="datepicker" placeholder="Data" type="date" value="{{dataDescoberta}}" name="dataDescoberta" required>
+            <label for="dataDescoberta">Data de descoberta</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <select name="tipoPlaneta" id="tipoPlaneta" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="rochoso">Rochoso</option>
+                <option value="gasoso">Gasoso</option>
+            </select>
+            <label>Tipo de Planeta</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <input type="text" class="validate" id="estrela" name="estrela" value="{{estrela}}" required>
+            <label for="estrela">Estrela</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s6">
+            <input type="text" id="constituicao" class="validate" name="constituicao" value="{{constituicao}}" required>
+            <label for="constituicao">Constituição (geral)</label>
+        </div>
+
+        <div class="input-field col s6">
+            <input type="text" id="constituicaoAtmosferica" class="validate" name="constituicaoAtmosferica" value="{{constituicaoAtmosferica}}" required>
+            <label for="constituicaoAtmosferica">Constituição Atmosférica</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <input type="text" class="validate" id="localizacao" name="localizacao" value="{{localizacao}}" required>
+            <label for="localizacao">Localização</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s6">
+            <input type="text" class="validate" id="raio" name="raio" value="{{dimensoes.raio}}" required>
+            <label for="raio">Raio</label>
+        </div>
+
+        <div class="input-field col s6">
+            <input type="text" id="massa" class="validate" name="massa" value="{{dimensoes.massa}}" required>
+            <label for="massa">Massa</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <input type="url" class="validate" id="url" name="url" value="{{url}}" required>
+            <label for="url">Ilustração (URL, por enquanto.)</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <input type="text" id="distancia-sol" class="validate" name="distancia-sol" value="{{distanciaSol}}" required>
+            <label for="distancia-sol">Distância do Sol</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s6">
+            <textarea id="fauna" class="materialize-textarea" name="fauna" value="{{fauna}}" required></textarea>
+            <label for="fauna">Fauna</label>
+        </div>
+
+        <div class="input-field col s6">
+            <textarea class="materialize-textarea" id="flora" name="flora" value="{{flora}}" required></textarea>
+            <label for="flora">Flora</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <textarea class="materialize-textarea" id="descricao" required>{{descricao}}</textarea>
+            <label for="descricao">Descrição</label>
+        </div>
+    </div>
+</template>

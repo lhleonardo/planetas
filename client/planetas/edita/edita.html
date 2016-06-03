@@ -1,0 +1,24 @@
+<template name="edita">
+    <h2 class="center">Modificar informações</h2>
+    <div class="row">
+        <div class="container">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input disabled value="{{_id}}" id="codigo" type="text" class="validate">
+                        <label for="disabled">Código</label>
+                    </div>
+                </div>
+                {{>formulario}}
+
+                <button id="buttonSalvar" class="btn waves-effect waves-light" type="submit" name="action">Salvar
+                    <i class="material-icons right">send</i>
+                </button>
+
+                <button id="buttonExcluir" class="btn waves-effect waves-light red" type="submit" name="action">Excluir
+                    <i class="material-icons right">delete</i>
+                </button>
+            </form>
+        </div>
+    </div>
+</template>
