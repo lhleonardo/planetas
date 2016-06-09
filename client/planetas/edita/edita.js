@@ -1,13 +1,20 @@
-Template.edita.onRendered(function(){
+Template.edita.onRendered(function() {
+    Materialize.updateTextFields();
+    var codigo = $("#codigo").val();
+    var planeta = Planetas.findOne({
+        _id: codigo
+    });
 
-  var codigo = $("#codigo").val();
-  var planeta = Meteor.call("buscaPorCodigo", codigo);
+    defineData(planeta.dataDescoberta);
 
-  var $input = $('.datepicker').pickadate()
-  var picker = $input.pickadate('picker')
-  picker.set('select', new Date(planeta.dataDescoberta));
-  Materialize.updateTextFields();
+
 });
+
+var defineData = function(data) {
+    var $input = $('.datepicker').pickadate()
+    var picker = $input.pickadate('picker')
+    picker.set('select', new Date(data));
+}
 
 
 Template.edita.events({
@@ -43,11 +50,11 @@ Template.edita.events({
 
         Router.go('/');
     },
-    "click #buttonExcluir" : function(event, template) {
-      event.preventDefault();
+    "click #buttonExcluir": function(event, template) {
+        event.preventDefault();
 
-      Meteor.call('remove', $('#codigo').val());
+        Meteor.call('remove', $('#codigo').val());
 
-      Router.go('/');
+        Router.go('/');
     }
 });
